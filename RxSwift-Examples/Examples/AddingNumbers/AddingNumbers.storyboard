@@ -86,10 +86,10 @@
                         <viewLayoutGuide key="safeArea" id="X4X-T4-ihe"/>
                     </view>
                     <connections>
-                        <outlet property="number1" destination="qGK-bP-7Us" id="tgg-zm-E8R"/>
-                        <outlet property="number2" destination="1Tu-G7-nTc" id="i4G-Et-ago"/>
-                        <outlet property="number3" destination="bb4-5Z-M3r" id="QZh-0K-UQD"/>
-                        <outlet property="result" destination="eCl-SW-Qr4" id="UzB-rG-8XT"/>
+                        <outlet property="firstTextField" destination="qGK-bP-7Us" id="zBF-Jq-PWA"/>
+                        <outlet property="resultLabel" destination="eCl-SW-Qr4" id="pn9-Ny-Ztc"/>
+                        <outlet property="secondTextField" destination="1Tu-G7-nTc" id="4gN-Vh-zPc"/>
+                        <outlet property="thirdTextField" destination="bb4-5Z-M3r" id="BSd-kV-DUj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92t-KW-xGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
