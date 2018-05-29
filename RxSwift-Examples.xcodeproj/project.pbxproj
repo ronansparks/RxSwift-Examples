@@ -18,6 +18,9 @@
 		3435F13320B2701B007029E3 /* ParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435F13220B2701B007029E3 /* ParentVC.swift */; };
 		3435F13620B294E0007029E3 /* SimpleValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435F13520B294E0007029E3 /* SimpleValidationVC.swift */; };
 		3435F13C20B29A9E007029E3 /* SimpleValidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3435F13B20B29A9E007029E3 /* SimpleValidation.storyboard */; };
+		343D28DD20BCF87100E9F75E /* SimpleTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343D28DC20BCF87100E9F75E /* SimpleTableView.storyboard */; };
+		343D28DF20BCF8A500E9F75E /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D28DE20BCF8A500E9F75E /* SimpleViewController.swift */; };
+		343D28E220BCFB8100E9F75E /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343D28E120BCFB8100E9F75E /* Wireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		3435F13220B2701B007029E3 /* ParentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentVC.swift; sourceTree = "<group>"; };
 		3435F13520B294E0007029E3 /* SimpleValidationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationVC.swift; sourceTree = "<group>"; };
 		3435F13B20B29A9E007029E3 /* SimpleValidation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleValidation.storyboard; sourceTree = "<group>"; };
+		343D28DC20BCF87100E9F75E /* SimpleTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SimpleTableView.storyboard; sourceTree = "<group>"; };
+		343D28DE20BCF8A500E9F75E /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		343D28E120BCFB8100E9F75E /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		3FC64E5E5049A8192A005F27 /* Pods_RxSwift_Examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC38F9486D6998BFF21AD20 /* Pods-RxSwift-Examples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Examples.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-Examples/Pods-RxSwift-Examples.release.xcconfig"; sourceTree = "<group>"; };
 		9CD45A569B764702ABB3B6DA /* Pods-RxSwift-Examples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Examples.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-Examples/Pods-RxSwift-Examples.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 			children = (
 				34106B7A20B25B3B00F520E2 /* Main */,
 				34106B7B20B25B4D00F520E2 /* Examples */,
+				343D28E020BCFB6D00E9F75E /* Service */,
 				34106B7920B25A0F00F520E2 /* Assets */,
 			);
 			path = "RxSwift-Examples";
@@ -112,6 +119,7 @@
 			children = (
 				3435F13420B294CA007029E3 /* SimpleValidation */,
 				34106B7E20B25D3500F520E2 /* AddingNumbers */,
+				343D28DB20BCF84400E9F75E /* SimpleTableView */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -132,6 +140,23 @@
 				3435F13B20B29A9E007029E3 /* SimpleValidation.storyboard */,
 			);
 			path = SimpleValidation;
+			sourceTree = "<group>";
+		};
+		343D28DB20BCF84400E9F75E /* SimpleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				343D28DC20BCF87100E9F75E /* SimpleTableView.storyboard */,
+				343D28DE20BCF8A500E9F75E /* SimpleViewController.swift */,
+			);
+			path = SimpleTableView;
+			sourceTree = "<group>";
+		};
+		343D28E020BCFB6D00E9F75E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				343D28E120BCFB8100E9F75E /* Wireframe.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		DE97C79FEAEE7EA5A863C706 /* Pods */ = {
@@ -206,6 +231,7 @@
 			files = (
 				34106B7220B2583000F520E2 /* LaunchScreen.storyboard in Resources */,
 				3435F13C20B29A9E007029E3 /* SimpleValidation.storyboard in Resources */,
+				343D28DD20BCF87100E9F75E /* SimpleTableView.storyboard in Resources */,
 				34106B6F20B2583000F520E2 /* Assets.xcassets in Resources */,
 				3435F13120B263F5007029E3 /* AddingNumbers.storyboard in Resources */,
 				34106B6D20B2583000F520E2 /* Main.storyboard in Resources */,
@@ -276,7 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3435F13320B2701B007029E3 /* ParentVC.swift in Sources */,
+				343D28E220BCFB8100E9F75E /* Wireframe.swift in Sources */,
 				3435F13620B294E0007029E3 /* SimpleValidationVC.swift in Sources */,
+				343D28DF20BCF8A500E9F75E /* SimpleViewController.swift in Sources */,
 				34106B8020B25D7700F520E2 /* AddingNumbersVC.swift in Sources */,
 				34106B6820B2583000F520E2 /* AppDelegate.swift in Sources */,
 				34106B7D20B25BD700F520E2 /* RootTableVC.swift in Sources */,

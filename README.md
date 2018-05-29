@@ -1,8 +1,12 @@
 Have you learned the theory about RxSwift?
 
-That's good, now it's time to get your hands dirty.
+That's good, now it's time to get your hands dirty. Examples are listed below
 
-Examples:
+NORMAL:
 
 + Adding Numbers
 + Simple Validation
+
+TABLE/COLLECTION VIEW
+
++ Simple TableView
