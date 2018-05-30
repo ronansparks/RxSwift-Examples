@@ -6,6 +6,7 @@ NORMAL:
 
 + Adding Numbers
 + Simple Validation
++ Github Signup
 + API Wrapper
 
 TABLE/COLLECTION VIEW
