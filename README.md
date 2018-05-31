@@ -9,6 +9,7 @@ NORMAL:
 + API Wrapper
 + GitHub Signup
 + GitHub Repositories
++ ImagePicker
 
 TABLE/COLLECTION VIEW
 
