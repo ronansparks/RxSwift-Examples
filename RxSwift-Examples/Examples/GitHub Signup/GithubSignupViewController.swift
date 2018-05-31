@@ -59,11 +59,11 @@ class GithubSignupViewController: UIViewController {
             .drive(repeatedPasswordValidationLabel.rx.validationResult)
             .disposed(by: bag)
         
-        viewModel.signingUp
+        viewModel.signingIn
             .drive(signingUpIndicator.rx.isAnimating)
             .disposed(by: bag)
         
-        viewModel.signedUp
+        viewModel.signupResult
             .drive(onNext: { signedIn in
                 print("User signed in \(signedIn)")
             })

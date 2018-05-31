@@ -16,8 +16,8 @@ class GithubSignupViewModel {
     let validatedPasswordRepeated: Driver<ValidationResult>
     
     let signupEnabled: Driver<Bool>
-    let signedUp: Driver<Bool>
-    let signingUp: Driver<Bool>
+    let signupResult: Driver<Bool>
+    let signingIn: Driver<Bool>
     
     init(input: (
             username: Driver<String>,
@@ -48,17 +48,17 @@ class GithubSignupViewModel {
         
         validatedPasswordRepeated = Driver.combineLatest(input.password, input.repeatedPassword, resultSelector: validationService.validateRepeatedPassword)
         
-        let signingUp = ActivityIndicator()
-        self.signingUp = signingUp.asDriver()
+        let activityIndicator = ActivityIndicator()
+        self.signingIn = activityIndicator.asDriver()
         
         let usernameAndPassword = Driver.combineLatest(input.username, input.password) {
             (username: $0, password: $1)
         }
         
-        signedUp = input.loginTaps.withLatestFrom(usernameAndPassword)
+        signupResult = input.loginTaps.withLatestFrom(usernameAndPassword)
             .flatMapLatest { pair in
                 return API.signup(pair.username, password: pair.password)
-                .trackActivity(signingUp)
+                .trackActivity(activityIndicator)
                 .asDriver(onErrorJustReturn: false)
             }
             .flatMapLatest { loggedIn -> Driver<Bool> in
@@ -74,12 +74,12 @@ class GithubSignupViewModel {
             validatedUsername,
             validatedPassword,
             validatedPasswordRepeated,
-            signingUp
-        ) { username, password, repeatedPassword, signingUp in
+            signingIn
+        ) { username, password, repeatedPassword, signingIn in
             username.isValid &&
             password.isValid &&
             repeatedPassword.isValid &&
-            !signingUp
+            !signingIn
         }
         .distinctUntilChanged()
     }

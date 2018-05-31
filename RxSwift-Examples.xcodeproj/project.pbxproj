@@ -16,6 +16,12 @@
 		34011BDA20BE45F100662D80 /* DefaultImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34011BD920BE45F100662D80 /* DefaultImplementations.swift */; };
 		34011BDD20BE490500662D80 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34011BDC20BE490500662D80 /* String.swift */; };
 		34011BDF20BE538900662D80 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34011BDE20BE538900662D80 /* ActivityIndicator.swift */; };
+		34059B8720BED9E300D6FE8F /* Repositorys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34059B8620BED9E300D6FE8F /* Repositorys.storyboard */; };
+		34059B8920BEDA6E00D6FE8F /* GitHubRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34059B8820BEDA6E00D6FE8F /* GitHubRepositoriesViewController.swift */; };
+		34059B8B20BEDBB000D6FE8F /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34059B8A20BEDBB000D6FE8F /* GitHubAPI.swift */; };
+		34059B8D20BEDF2500D6FE8F /* GitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34059B8C20BEDF2500D6FE8F /* GitHubModel.swift */; };
+		34059B8F20BEE06800D6FE8F /* GitHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34059B8E20BEE06800D6FE8F /* GitHubViewModel.swift */; };
+		34059B9120BEE66C00D6FE8F /* GitHubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34059B9020BEE66C00D6FE8F /* GitHubNetworkService.swift */; };
 		34106B6820B2583000F520E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34106B6720B2583000F520E2 /* AppDelegate.swift */; };
 		34106B6D20B2583000F520E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34106B6B20B2583000F520E2 /* Main.storyboard */; };
 		34106B6F20B2583000F520E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34106B6E20B2583000F520E2 /* Assets.xcassets */; };
@@ -43,6 +49,12 @@
 		34011BD920BE45F100662D80 /* DefaultImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImplementations.swift; sourceTree = "<group>"; };
 		34011BDC20BE490500662D80 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		34011BDE20BE538900662D80 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		34059B8620BED9E300D6FE8F /* Repositorys.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repositorys.storyboard; sourceTree = "<group>"; };
+		34059B8820BEDA6E00D6FE8F /* GitHubRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepositoriesViewController.swift; sourceTree = "<group>"; };
+		34059B8A20BEDBB000D6FE8F /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		34059B8C20BEDF2500D6FE8F /* GitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubModel.swift; sourceTree = "<group>"; };
+		34059B8E20BEE06800D6FE8F /* GitHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubViewModel.swift; sourceTree = "<group>"; };
+		34059B9020BEE66C00D6FE8F /* GitHubNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNetworkService.swift; sourceTree = "<group>"; };
 		34106B6420B2582F00F520E2 /* RxSwift-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34106B6720B2583000F520E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34106B6C20B2583000F520E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,7 +98,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		34011BCC20BE42C300662D80 /* Github Signup */ = {
+		34011BCC20BE42C300662D80 /* GitHub Signup */ = {
 			isa = PBXGroup;
 			children = (
 				34011BCD20BE42F900662D80 /* GithubSignupViewController.swift */,
@@ -96,7 +108,7 @@
 				34011BD920BE45F100662D80 /* DefaultImplementations.swift */,
 				34011BCF20BE430800662D80 /* GithubSignup.storyboard */,
 			);
-			path = "Github Signup";
+			path = "GitHub Signup";
 			sourceTree = "<group>";
 		};
 		34011BDB20BE48F800662D80 /* Extension */ = {
@@ -105,6 +117,19 @@
 				34011BDC20BE490500662D80 /* String.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		34059B8520BED94E00D6FE8F /* GitHubRepositoies */ = {
+			isa = PBXGroup;
+			children = (
+				34059B8620BED9E300D6FE8F /* Repositorys.storyboard */,
+				34059B8820BEDA6E00D6FE8F /* GitHubRepositoriesViewController.swift */,
+				34059B9020BEE66C00D6FE8F /* GitHubNetworkService.swift */,
+				34059B8A20BEDBB000D6FE8F /* GitHubAPI.swift */,
+				34059B8C20BEDF2500D6FE8F /* GitHubModel.swift */,
+				34059B8E20BEE06800D6FE8F /* GitHubViewModel.swift */,
+			);
+			path = GitHubRepositoies;
 			sourceTree = "<group>";
 		};
 		34106B5B20B2582F00F520E2 = {
@@ -164,7 +189,8 @@
 				3435F13420B294CA007029E3 /* SimpleValidation */,
 				34106B7E20B25D3500F520E2 /* AddingNumbers */,
 				343D28F220BD038B00E9F75E /* APIWrappers */,
-				34011BCC20BE42C300662D80 /* Github Signup */,
+				34011BCC20BE42C300662D80 /* GitHub Signup */,
+				34059B8520BED94E00D6FE8F /* GitHubRepositoies */,
 				343D28DB20BCF84400E9F75E /* SimpleTableView */,
 			);
 			path = Examples;
@@ -290,6 +316,7 @@
 				3435F13C20B29A9E007029E3 /* SimpleValidation.storyboard in Resources */,
 				343D28F420BD03C800E9F75E /* APIWrappers.storyboard in Resources */,
 				343D28DD20BCF87100E9F75E /* SimpleTableView.storyboard in Resources */,
+				34059B8720BED9E300D6FE8F /* Repositorys.storyboard in Resources */,
 				34106B6F20B2583000F520E2 /* Assets.xcassets in Resources */,
 				3435F13120B263F5007029E3 /* AddingNumbers.storyboard in Resources */,
 				34106B6D20B2583000F520E2 /* Main.storyboard in Resources */,
@@ -307,11 +334,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwift-Examples/Pods-RxSwift-Examples-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -364,14 +397,19 @@
 				3435F13320B2701B007029E3 /* ParentVC.swift in Sources */,
 				343D28E220BCFB8100E9F75E /* Wireframe.swift in Sources */,
 				34011BD420BE45A800662D80 /* Protocols.swift in Sources */,
+				34059B8D20BEDF2500D6FE8F /* GitHubModel.swift in Sources */,
 				3435F13620B294E0007029E3 /* SimpleValidationVC.swift in Sources */,
 				343D28DF20BCF8A500E9F75E /* SimpleViewController.swift in Sources */,
 				34011BD820BE45D500662D80 /* BindingExtensions.swift in Sources */,
+				34059B9120BEE66C00D6FE8F /* GitHubNetworkService.swift in Sources */,
+				34059B8B20BEDBB000D6FE8F /* GitHubAPI.swift in Sources */,
 				34011BDA20BE45F100662D80 /* DefaultImplementations.swift in Sources */,
 				34106B8020B25D7700F520E2 /* AddingNumbersVC.swift in Sources */,
+				34059B8F20BEE06800D6FE8F /* GitHubViewModel.swift in Sources */,
 				34106B6820B2583000F520E2 /* AppDelegate.swift in Sources */,
 				34011BCE20BE42F900662D80 /* GithubSignupViewController.swift in Sources */,
 				34106B7D20B25BD700F520E2 /* RootTableVC.swift in Sources */,
+				34059B8920BEDA6E00D6FE8F /* GitHubRepositoriesViewController.swift in Sources */,
 				34011BDF20BE538900662D80 /* ActivityIndicator.swift in Sources */,
 				34011BDD20BE490500662D80 /* String.swift in Sources */,
 				343D28F620BD0BCD00E9F75E /* APIWrappersViewController.swift in Sources */,
